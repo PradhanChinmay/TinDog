@@ -229,9 +229,19 @@
 
   </footer>
 
-  <!-- <script>
-    cosole.log("hello world, just testing!");
-  </script> -->
+  <script>
+      function createCourses (title) {
+          return {
+              title : title,
+              enroll() {
+                  console.log("you're successfully enrolled to " + this.title + " course");
+              }
+          }
+      }
+
+      const course = createCourses('Javascript');
+      course.enroll();
+  </script>
 
 </body>
 
