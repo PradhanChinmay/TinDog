@@ -230,17 +230,12 @@
   </footer>
 
   <script>
-      function createCourses (title) {
-          return {
-              title : title,
-              enroll() {
-                  console.log("you're successfully enrolled to " + this.title + " course");
-              }
-          }
+      // arrow function.
+      const greet = () => {
+        return "hello world";
       }
 
-      const course = createCourses('Javascript');
-      course.enroll();
+      console.log(greet());
   </script>
 
 </body>
